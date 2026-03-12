@@ -1,7 +1,7 @@
 # 🔐 Zero-Trust Password Factory (零信任密码工厂)
 
 > **🛡️ 零信任无状态密码工厂。基于「日期+用途映射+私有盐值」的确定性哈希算法。零存储，用后即焚，代码跑本地，暗号记脑中，彻底免疫社工字典！**
-> 
+> 
 > *Zero-Trust stateless password factory. Generate deterministic hashes via [Date + Service + Secret]. No database, 100% offline, anti-OSINT.*
 
 ---
@@ -26,6 +26,11 @@
 随时核对你的“脑内坐标”是否正确。
 ![校验演示](./03.png)
 
+### 4. 安全过程可视化 (Security Process Visualization)
+直观展示确定性哈希和物理隔离的密码生成流程。
+*Visualize the deterministic hashing and physical isolation password generation process.*
+![安全过程图解](./04.png)
+
 ---
 
 ## ✨ 核心特性 (Key Features)
@@ -34,18 +39,18 @@
 * **物理维度隔离 (Physical Isolation)**：阻断浏览器自动填充，防止密码在不可见的环境中被窃取。
 * **抗社工字典攻击 (Anti-OSINT)**：通过「用途映射」和「私有盐值」，即便攻击者掌握你的个人真实资料，也无法解密你的密码逻辑。
 * **双版本支持 (Dual-Version)**：
-    * `index.html`: 纯前端 JS 版本，完美支持 GitHub Pages 托管，完全断网可用。
-    * `index.php`: 后端自托管版，适合部署在 NAS、软路由等个人私有服务器。
+    * `index.html`: 纯前端 JS 版本，完美支持 GitHub Pages 托管，完全断网可用。
+    * `index.php`: 后端自托管版，适合部署在 NAS、软路由等个人私有服务器。
 
 ---
 
 ## 🚀 快速开始 (Quick Start)
 
-1.  **访问地址**：打开 [在线演示](https://sowahsun.github.io/Zero-Trust-Password-Factory/) 或在本地运行 `index.html`。
-2.  **设置锚点日期**：选择一个只有你记得的日子（如：第一次吃某家餐厅的日子）。
-3.  **填写用途映射**：建议使用非关联暗号（如：注册淘宝填“买菜”）。
-4.  **注入私有盐值**：你脑海中最深处的一句暗语。
-5.  **点击生成**：获得你的专属高强度密码。
+1.  **访问地址**：打开 [在线演示](https://sowahsun.github.io/Zero-Trust-Password-Factory/) 或在本地运行 `index.html`。
+2.  **设置锚点日期**：选择一个只有你记得的日子（如：第一次吃某家餐厅的日子）。
+3.  **填写用途映射**：建议使用非关联暗号（如：注册淘宝填“买菜”）。
+4.  **注入私有盐值**：你脑海中最深处的一句暗语。
+5.  **点击生成**：获得你的专属高强度密码。
 
 ---
 
